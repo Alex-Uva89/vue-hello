@@ -3,6 +3,9 @@ const settings = {
     data: {
        nome: '',
        cognome: '',
+       colore: '',
+       img: "https://picsum.photos/200/200",
+       alt: "immagine random presa da Lorem Picsum"
     }
  };
  

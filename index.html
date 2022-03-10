@@ -11,12 +11,17 @@
 <body>
     
     <div id="app" class="center">
-        <h1 class="">{{ `Ciao ${nome} ${cognome}` }}</h1>
+        <h1>{{ `Ciao ${nome} ${cognome} il tuo colore preferito è ${colore}`}}</h1>
+        
+        <img :src="img" :alt="alt">
+        
         <div>
             <label for="name">Nome</label>
             <input v-model="nome" type="text" id="name">
             <label for="surname">Cognome</label>
             <input v-model="cognome" type="text" name="surname" id="surname">
+            <label for="color">Colore</label>
+            <input v-model="colore" type="text" name="color" id="color">
         </div>
         <p>Dimmi chi sei e ti saluterò</p>
      </div>
